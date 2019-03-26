@@ -1,0 +1,13 @@
+cloud_provider:
+  name: vsphere
+  vsphereCloudProvider:
+    virtual_center:
+      esxi.udemy.local:
+        user: root
+        password: SystrayServer!*
+        datacenters: ha-datacenter
+    workspace:
+      server: esxi.udemy.local
+      folder: /
+      default-datastore: kubernetes
+      datacenter: ha-datacenter
